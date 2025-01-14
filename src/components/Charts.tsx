@@ -166,8 +166,8 @@ export const ProgressChart = ({ progress }: { progress: number }) => {
       {
         data: [progress, 100 - progress],
         backgroundColor: [
-          "rgba(75, 192, 192, 0.8)", // Progress color
-          "rgba(240, 240, 240, 0.8)", // Remaining color
+          "rgba(75, 192, 192, 0.8)", 
+          "rgba(240, 240, 240, 0.8)", 
         ],
         hoverOffset: 4,
         borderWidth: 0,
@@ -177,13 +177,13 @@ export const ProgressChart = ({ progress }: { progress: number }) => {
 
   const options = {
     responsive: true,
-    cutout: "80%", // Controls the size of the inner circle
+    cutout: "80%", 
     plugins: {
       tooltip: {
-        enabled: false, // Disable tooltips
+        enabled: false, 
       },
       legend: {
-        display: false, // Hide legend
+        display: false, 
       },
     },
   };
